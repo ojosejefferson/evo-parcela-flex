@@ -1,0 +1,65 @@
+name: WooCommerce Gateway Discount Skill
+
+description:
+Sistema inteligente de descontos por gateway de pagamento para WooCommerce.
+
+features:
+
+  - dynamic_variable_product_discount:
+      description:
+        Atualiza automaticamente o desconto ao selecionar variações de produtos.
+
+  - checkout_best_price_display:
+      description:
+        Mostra no checkout o melhor preço baseado no gateway selecionado.
+
+  - custom_gateway_badges:
+      description:
+        Permite badge individual por método de pagamento.
+
+      options:
+        - enable_disable
+        - custom_text
+        - custom_color
+        - display_on_product
+        - display_on_checkout
+
+  - cart_discount_display:
+      description:
+        Mostra no carrinho o valor economizado por gateway.
+
+  - realtime_discount_refresh:
+      description:
+        Recalcula descontos dinamicamente sem reload.
+
+bugfixes:
+
+  - variable_products_discount_not_refreshing:
+      status: fixed
+
+      problem:
+        O desconto não atualizava quando a variação tinha preço diferente.
+
+      solution:
+        Escutar eventos de alteração de variação e recalcular valores via AJAX/JS.
+
+hooks:
+
+  - woocommerce_before_add_to_cart_form
+  - woocommerce_after_shop_loop_item
+  - woocommerce_cart_totals_before_order_total
+  - woocommerce_review_order_before_payment
+  - woocommerce_available_payment_gateways
+
+javascript_events:
+
+  - found_variation
+  - show_variation
+  - updated_checkout
+
+goals:
+
+  - aumentar conversão
+  - incentivar PIX
+  - destacar melhor preço
+  - melhorar UX no checkout

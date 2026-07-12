@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(php -l \"/Users/gel/Local Sites/ecom/app/public/wp-content/plugins/evo-parcela-woo/includes/Model/Calculator.php\")",
+      "Bash(php -l \"/Users/gel/Local Sites/ecom/app/public/wp-content/plugins/evo-parcela-woo/includes/Controller/CheckoutController.php\")",
+      "Bash(php -l \"/Users/gel/Local Sites/ecom/app/public/wp-content/plugins/evo-parcela-woo/includes/Controller/FrontendController.php\")"
+    ]
+  }
+}

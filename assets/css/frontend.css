@@ -1,0 +1,648 @@
+.evo-flex-pricing-box {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    font-family: inherit;
+}
+
+.evo-flex-pix-price {
+    margin-bottom: 10px;
+}
+
+.evo-flex-label {
+    font-size: 0.9em;
+    color: #666;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.evo-flex-value {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #222;
+    margin-right: 10px;
+}
+
+.evo-flex-badge {
+    background: #e6fffa;
+    color: #38a169;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.evo-flex-installments {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px dashed #ddd;
+}
+
+.evo-flex-interest-free {
+    color: #3182ce;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.evo-flex-qty-discount {
+    background: #fff5f5;
+    color: #c53030;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-size: 0.95em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.evo-flex-actions {
+    margin-top: 15px;
+}
+
+.evo-flex-toggle-installments {
+    font-size: 0.85em;
+    color: #007cba;
+    text-decoration: none;
+    border-bottom: 1px dotted #007cba;
+}
+
+.evo-flex-all-installments {
+    margin-top: 15px;
+    overflow-x: auto;
+}
+
+.evo-flex-all-installments table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+}
+
+.evo-flex-all-installments th, 
+.evo-flex-all-installments td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.evo-flex-all-installments th {
+    background: #f5f5f5;
+    font-weight: 600;
+}
+
+/* Archive (Listing) Pricing */
+.evo-flex-archive-pricing {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #16a34a; /* Green */
+    font-weight: 600;
+    display: block;
+    width: 100%;
+}
+.evo-flex-archive-value {
+    font-size: 1.1em;
+    font-weight: 700;
+}
+.evo-flex-archive-prefix {
+    margin-right: 4px;
+    opacity: 0.8;
+}
+.evo-flex-archive-label {
+    margin-left: 3px;
+    font-weight: 500;
+    opacity: 0.9;
+}
+.evo-flex-gw-icon-archive {
+    max-height: 14px;
+    width: auto;
+}
+
+/* --- Layout: Dark Card --- */
+.evo-flex-layout-dark-card .evo-flex-layout-inner {
+    background: #121212 !important;
+    border-radius: 16px !important;
+    padding: 25px !important;
+    color: #ffffff !important;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2) !important;
+    position: relative;
+    border: 1px solid #333 !important;
+}
+.dark-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.dark-card-title {
+    font-size: 1.1em;
+    font-weight: 700;
+    opacity: 0.9;
+}
+.dark-card-badge {
+    background: #00d1b2 !important;
+    color: #000 !important;
+    padding: 4px 12px !important;
+    border-radius: 8px !important;
+    font-weight: 800;
+    font-size: 0.9em;
+}
+.dark-card-price {
+    font-size: 2.2em !important;
+    font-weight: 800 !important;
+    color: #00d1b2 !important;
+    margin-bottom: 8px;
+    line-height: 1;
+}
+.dark-card-subtext {
+    font-size: 0.95em;
+    opacity: 0.7;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    margin-top: 10px;
+}
+
+/* --- Layout: Light Border --- */
+.evo-flex-layout-light-border .evo-flex-layout-inner {
+    background: #ffffff !important;
+    border: 2px solid #00c08b !important;
+    border-radius: 16px !important;
+    padding: 20px !important;
+    position: relative;
+    margin-top: 15px;
+}
+.light-border-badge {
+    position: absolute;
+    top: -14px;
+    left: 20px;
+    background: #00c08b !important;
+    color: #ffffff !important;
+    padding: 5px 15px !important;
+    border-radius: 50px !important;
+    font-size: 0.85em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.light-border-old-price {
+    text-decoration: line-through;
+    opacity: 0.4;
+    font-size: 1em;
+}
+.light-border-final-price {
+    font-size: 2.2em !important;
+    font-weight: 800 !important;
+    color: #00c08b !important;
+    line-height: 1.2;
+}
+.light-border-note {
+    font-size: 0.95em;
+    opacity: 0.8;
+    margin-top: 8px;
+}
+
+/* --- Layout: Brand Solid --- */
+.evo-flex-layout-brand-solid .evo-flex-layout-inner {
+    background: #00c08b !important;
+    border-radius: 20px !important;
+    padding: 30px !important;
+    color: #ffffff !important;
+    position: relative;
+    overflow: hidden;
+}
+.brand-solid-watermark {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    font-size: 6em;
+    font-weight: 900;
+    opacity: 0.15;
+    pointer-events: none;
+    color: #fff;
+}
+.brand-solid-header {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.brand-solid-price {
+    font-size: 2.8em !important;
+    font-weight: 800 !important;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+.brand-solid-savings {
+    display: inline-block;
+    background: rgba(255,255,255,0.2) !important;
+    padding: 6px 15px !important;
+    border-radius: 50px !important;
+    font-size: 0.95em;
+    font-weight: 700;
+    backdrop-filter: blur(5px);
+}
+
+/* --- Layout: Minimal Text --- */
+.evo-flex-layout-minimal-text .evo-flex-layout-inner {
+    padding: 15px 0 !important;
+}
+.minimal-text-row {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+}
+.minimal-text-price {
+    font-size: 2.8em !important;
+    font-weight: 900 !important;
+    color: #111 !important;
+}
+.minimal-text-label {
+    font-size: 1.3em;
+    color: #00c08b;
+    font-weight: 700;
+}
+.minimal-text-savings {
+    margin-top: 8px;
+    color: #2f855a;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.1em;
+}
+
+/* --- Layout: Horizontal Bar --- */
+.evo-flex-layout-horizontal-bar .evo-flex-layout-inner {
+    background: #00796B !important;
+    border-radius: 12px !important;
+    padding: 15px 25px !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+}
+.horizontal-bar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.horizontal-bar-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.horizontal-bar-icon i { font-size: 1.5em; }
+.horizontal-bar-icon-default { font-size: 1.5em; color: #ffeb3b; }
+.horizontal-bar-prefix { font-size: 1.1em; font-weight: 600; }
+.horizontal-bar-center { display: flex; align-items: baseline; gap: 10px; }
+.horizontal-bar-price { font-size: 2em !important; font-weight: 800 !important; }
+.horizontal-bar-label { font-size: 1.1em; opacity: 0.9; }
+.horizontal-bar-badge {
+    background: #ffffff !important;
+    color: #00796B !important;
+    padding: 4px 12px !important;
+    border-radius: 8px !important;
+    font-weight: 800;
+    font-size: 0.95em;
+}
+
+/* Checkout Badges */
+.evo-flex-checkout-badge {
+    font-size: 0.75em;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: 600;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+.evo-flex-checkout-badge.approval { background: #ebf8ff; color: #2b6cb0; }
+.evo-flex-checkout-badge.custom { color: #fff; }
+.evo-flex-checkout-badge.interest { background: #fffaf0; color: #9c4221; }
+.evo-flex-checkout-badge.no-interest { background: #f0fff4; color: #2f855a; }
+
+/* Cart & Checkout Savings */
+.evo-flex-cart-savings-row th { font-weight: 700; color: #1a202c; vertical-align: middle; }
+.evo-flex-cart-savings-row td { text-align: right; vertical-align: middle; }
+.evo-flex-saving-value { font-weight: 700; color: #1a202c; font-size: 16px; }
+.evo-flex-saving-discount { font-size: 13px; color: #2f855a; font-weight: 600; }
+
+.evo-flex-checkout-highlight {
+    background: #fffaf0;
+    border: 1px solid #feebc8;
+    color: #c05621;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* Savings & Installment Highlights (Shortcodes/Product) */
+.evo-flex-savings-highlight, 
+.evo-flex-best-installment-highlight {
+    background: #fff;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border-left: 4px solid #38a169;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    font-family: inherit;
+    transition: opacity 0.2s;
+}
+.evo-flex-best-installment-highlight { border-left-color: #3182ce; }
+.evo-flex-savings-highlight i, .evo-flex-best-installment-highlight i { font-size: 20px; color: #38a169; }
+.evo-flex-savings-highlight i { color: #38a169; }
+.evo-flex-best-installment-highlight i { color: #3182ce; }
+.evo-flex-final-price-note { display: block; font-size: 0.9em; color: #718096; margin-top: 2px; }
+.evo-flex-final-price-note strong { color: #2d3748; }
+
+/* Restrição de Parcelamento */
+.evo-no-installments {
+    display: block;
+    color: #ef4444;
+    font-weight: 600;
+    font-size: 0.85em;
+    background: rgba(239, 68, 68, 0.1);
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-top: 5px;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.evo-flex-layout-dark-card .evo-no-installments {
+    background: rgba(255, 255, 255, 0.05);
+    color: #ff8a8a;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Modal Styles */
+.evo-flex-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    direction: ltr !important;
+}
+
+.evo-flex-modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.evo-flex-modal-container {
+    position: relative;
+    width: 95%;
+    max-width: 600px;
+    margin: auto;
+    max-height: 90vh;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+    overflow-y: auto;
+    animation: evo-flex-modal-in 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes evo-flex-modal-in {
+    from { opacity: 0; transform: scale(0.95) translateY(10px); }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.evo-flex-modal-close {
+    position: absolute !important;
+    top: 15px !important;
+    right: 15px !important;
+    left: auto !important;
+    margin: 0 !important;
+    width: 32px;
+    height: 32px;
+    background: #f1f5f9;
+    border: none;
+    border-radius: 50%;
+    color: #64748b;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    z-index: 11;
+}
+
+.evo-flex-modal-close:hover {
+    background: #e2e8f0;
+    color: #0f172a;
+    transform: rotate(90deg);
+}
+
+.evo-flex-modal-content {
+    padding: 30px;
+}
+
+body.evo-flex-modal-open {
+    overflow: hidden !important;
+}
+
+/* Responsive adjust for the table inside modal */
+.evo-flex-modal .evo-flex-all-installments {
+    display: block !important;
+}
+
+.evo-flex-modal .evo-flex-installments-table {
+    margin-top: 0;
+    border: none;
+}
+
+/* Bulk Pricing (Alibaba Style) */
+.evo-flex-bulk-pricing-wrap {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 15px 0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.evo-flex-bulk-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    color: #1e293b;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.evo-flex-bulk-header i {
+    color: #4f46e5;
+}
+
+.evo-flex-bulk-tiers {
+    display: flex;
+    gap: 10px;
+}
+
+.evo-flex-bulk-tier {
+    flex: 1;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.evo-flex-bulk-tier.highlight {
+    background: #eff6ff;
+    border-color: #3b82f6;
+}
+
+.evo-flex-bulk-tier .bulk-qty {
+    font-size: 11px;
+    font-weight: 600;
+    color: #64748b;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.evo-flex-bulk-tier .bulk-price {
+    font-size: 18px;
+    font-weight: 800;
+    color: #1e293b;
+    margin-bottom: 2px;
+}
+
+.evo-flex-bulk-tier .bulk-label {
+    font-size: 11px;
+    color: #3b82f6;
+    font-weight: 600;
+}
+
+.evo-flex-bulk-tier .bulk-badge {
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #3b82f6;
+    color: #fff;
+    font-size: 8px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: 800;
+    white-space: nowrap;
+    box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.3);
+}
+
+@media (max-width: 480px) {
+    .evo-flex-bulk-tiers {
+        flex-direction: column;
+    }
+}
+
+/* Simple List Bulk Layout */
+.evo-flex-bulk-simple-list {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    border-left: 4px solid #4f46e5;
+    margin: 15px 0;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+}
+
+.bulk-list-title {
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: #1e293b;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.evo-flex-bulk-simple-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.evo-flex-bulk-simple-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px dashed #e2e8f0;
+    font-size: 13px;
+}
+
+.evo-flex-bulk-simple-list li:last-child {
+    border-bottom: none;
+}
+
+.evo-flex-bulk-simple-list .discount-highlight {
+    color: #4f46e5;
+    font-weight: 700;
+}
+
+.evo-flex-bulk-simple-list .badge {
+    background: #4f46e5;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+/* Compact Badges Bulk Layout */
+.evo-flex-bulk-compact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.bulk-badge-item {
+    background: #f1f5f9;
+    padding: 8px 15px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+.bulk-badge-item.highlight {
+    background: #4f46e5;
+    color: white;
+    border-color: #4f46e5;
+}
+
+.bulk-badge-item .label {
+    opacity: 0.8;
+}
+
+.bulk-badge-item .value {
+    font-weight: 700;
+}
+
+.bulk-badge-item .save-tag {
+    background: rgba(255,255,255,0.2);
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-size: 10px;
+}
